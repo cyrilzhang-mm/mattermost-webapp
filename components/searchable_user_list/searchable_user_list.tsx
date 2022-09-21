@@ -244,7 +244,7 @@ class SearchableUserList extends React.PureComponent<Props, State> {
 
             usersToDisplay = this.props.users.slice(pageStart, pageEnd);
 
-            if (pageEnd < this.props.total) {
+            if (pageEnd < this.props.users.length) {
                 nextButton = (
                     <button
                         id='searchableUserListNextBtn'
